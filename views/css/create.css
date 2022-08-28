@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 3rem;
+    border-radius: 3rem;
+    background-color: antiquewhite;
+}
+button{
+    width: 16%;
+    font-size:1vw ;
+    background-color: rgb(255, 255, 255);
+    border-color: white;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.input-boxes{
+    font-size: 1vw;
+}

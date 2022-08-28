@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY_COMMUNITY</title>
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Share your IDEA</h1>
+    <%for(result in results){%>
+        <div id="idea-box">
+            <h3><nav style="display:block;"></nav><%=results[result].title%></h3>
+            <p><%=results[result].main%></p>
+            <div>
+                <form action="/delete/<%=results[result].id%>" method="post">
+                    <input type="submit" value="삭제">
+                </form>
+                <form action="/update/<%=results[result].id%>" method="post">
+                    <input type="submit" value="수정">
+                </form>
+            </div>
+        </div>
+    <%}%>
+    <div id="create" onclick="goCreate();">+</div>
+    <script>
+        //const userInput = prompt("닉네임을 입력하세요()");
+        function goCreate(){
+            window.location.href = "/create";
+        }
+    </script>
+</body>
+</html>
