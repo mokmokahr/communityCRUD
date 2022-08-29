@@ -17,7 +17,7 @@ div#idea-box{
     padding: 1rem;
 }
 
-div#create{
+#create{
     position : fixed;
     background-color: rgb(26, 138, 89);
     color: white;
@@ -32,8 +32,9 @@ div#create{
     display: flex;
     justify-content: center;
     margin: 1rem;
+    border: none;
 }
 
-div#create:hover{
+#create:hover{
     cursor: pointer;
 }

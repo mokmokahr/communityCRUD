@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,18 +17,14 @@
                 <form action="/delete/<%=results[result].id%>" method="post">
                     <input type="submit" value="삭제">
                 </form>
-                <form action="/update/<%=results[result].id%>" method="post">
+                <form action="/update/<%=results[result].id%>" method="get">
                     <input type="submit" value="수정">
                 </form>
             </div>
         </div>
     <%}%>
-    <div id="create" onclick="goCreate();">+</div>
-    <script>
-        //const userInput = prompt("닉네임을 입력하세요()");
-        function goCreate(){
-            window.location.href = "/create";
-        }
-    </script>
+    <form action="/create" method="get">
+        <input id="create" type="submit" value="+">
+    </form>
 </body>
 </html>

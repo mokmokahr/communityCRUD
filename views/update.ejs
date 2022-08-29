@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create</title>
+    <link rel="stylesheet" href="/css/create.css">
+</head>
+<body>
+    <form action="/update/<%=result.id%>" method="post">
+        <h1>UPDATE CONTENT</h1>
+        <p>제목:</p><input class="input-boxes" type="text" value="<%=result.title%>" placeholder="제목을 작성하세요" name="title">
+        <p>내용</p>
+        <textarea class="input-boxes" cols="60vh" rows="10vw" placeholder="내용을 작성하세요" name="main"><%=result.main%></textarea>
+        <br>
+        <input type="submit" value="수정">
+    </form>
+</body>
+</html>
